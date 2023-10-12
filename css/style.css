@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 4fr 3fr;
+}
+
+.header{
+    width: 95%;
+    height: 105px;
+    margin: 20px 30px 30px 25px;
+    border: 2px solid black;
+    background-color:  darkorange;
+    grid-column: 2;
+    grid-column: span 3;
+    grid-row: 1;
+
+}
+
+.main{
+    width: 95%;
+    height: 95%;
+    margin-left: 25px;
+    border: 2px solid black;
+    background-color: darkred;
+    grid-column: 1/3;
+    grid-column: span 3;
+    grid-row: 2;
+}
+
+.section{
+    width: 50%;
+    height: 97%;
+    margin-left: 35px;
+    border: 2px solid black;
+    background-color: rgb(255, 30, 0);
+    grid-column: 1;
+    grid-row: 3;
+
+}
+
+.aside{
+    width: 40%;
+    height: 97%;
+    border: 2px solid black;
+    background-color: rgb(20, 172, 0);
+    grid-column: 2/3;
+    grid-row: 3;
+}
+
+.footer{
+    width: 68%;
+    height: 97%;
+    border: 2px solid black;
+    background-color: rgb(1, 211, 211);
+    grid-column: 3;
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+/* Tablet size */
+@media (max-width: 715px){
+    .content{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 3fr 2fr;
+    }
+
+    .header{
+        width: 98%;
+        height: 100px;
+        margin: 8px;
+        border: 2px solid black;
+        background-color:  darkorange;
+        grid-column: 1;
+        grid-column: span 2;
+        grid-row: 1;
+    
+    }
+
+    .main{
+        width: 90%;
+        height: 97%;
+        margin-left: 25px;
+        border: 2px solid black;
+        background-color: darkred;
+        grid-column: 1;
+        grid-row: 2;
+        grid-row: span 3;
+    }
+
+    .section{
+        width: 80%;
+        height: 43%;
+        margin: 8px 20px 20px;
+        border: 2px solid black;
+        background-color: rgb(255, 30, 0);
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .aside{
+        width: 80%;
+        height: 38%;
+        margin: 135px 20px 20px;
+        border: 2px solid black;
+        background-color: rgb(20, 172, 0);
+        grid-column: 2;
+        grid-row: 2; 
+    }
+
+    .footer{
+        width: 80%;
+        height: 95%;
+        margin: -15px 20px 2px ;
+        border: 2px solid black;
+        background-color: rgb(1, 211, 211);
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
+
+/* Phone size */
+@media (max-width: 390px) {
+    .content{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 2fr ;
+    }
+
+    .header{
+        width: 98%;
+        height: 90px;
+        margin: 5px;
+        border: 2px solid black;
+        background-color:  darkorange;
+        grid-column: 1;
+        grid-column: span 2;
+        grid-row: 1; 
+    }
+
+    .main{
+        width: 193%;
+        height: 105px;
+        margin: 8px;
+        border: 2px solid black;
+        background-color: darkred;
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    .section{
+        width: 188%;
+        height: 85px;
+        margin: 123px 15px 20px;
+        border: 2px solid black;
+        background-color: rgb(255, 30, 0);
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .aside{
+        width: 85%;
+        height: 100%;
+        margin: -35px 20px;
+        border: 2px solid black;
+        background-color: rgb(20, 172, 0);
+        grid-column: 1;
+        grid-row: 3; 
+    }
+
+    .footer{
+        width: 85%;
+        height: 100%;
+        margin: -30px 10px;
+        border: 2px solid black;
+        background-color: rgb(1, 211, 211);
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+}
